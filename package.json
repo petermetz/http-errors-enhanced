@@ -1,9 +1,9 @@
 {
-  "name": "http-errors-enhanced",
-  "version": "2.0.0",
+  "name": "http-errors-enhanced-cjs",
+  "version": "2.0.1",
   "description": "Create HTTP errors with additional properties for any framework.",
-  "homepage": "https://sw.cowtech.it/http-errors-enhanced",
-  "repository": "github:ShogunPanda/http-errors-enhanced",
+  "homepage": "https://github.com/petermetz/http-errors-enhanced",
+  "repository": "github:petermetz/http-errors-enhanced",
   "keywords": [
     "http",
     "errors",
@@ -11,9 +11,9 @@
     "http-errors"
   ],
   "bugs": {
-    "url": "https://github.com/ShogunPanda/http-errors-enhanced/issues"
+    "url": "https://github.com/petermetz/http-errors-enhanced/issues"
   },
-  "author": "Shogun <shogun@cowtech.it>",
+  "author": "Peter Somogyvari",
   "license": "ISC",
   "private": false,
   "files": [

@@ -1,20 +1,38 @@
-# http-errors-enhanced
+# http-errors-enhanced-cjs
 
-[![Version](https://img.shields.io/npm/v/http-errors-enhanced.svg)](https://npm.im/http-errors-enhanced)
-[![Dependencies](https://img.shields.io/librariesio/release/npm/http-errors-enhanced)](https://libraries.io/npm/http-errors-enhanced)
-[![Build](https://github.com/ShogunPanda/http-errors-enhanced/workflows/CI/badge.svg)](https://github.com/ShogunPanda/http-errors-enhanced/actions?query=workflow%3ACI)
-[![Coverage](https://img.shields.io/codecov/c/gh/ShogunPanda/http-errors-enhanced?token=jxElZm8DEK)](https://codecov.io/gh/ShogunPanda/http-errors-enhanced)
+[![Version](https://img.shields.io/npm/v/http-errors-enhanced-cjs.svg)](https://npm.im/http-errors-enhanced-cjs)
+[![Dependencies](https://img.shields.io/librariesio/release/npm/http-errors-enhanced-cjs)](https://libraries.io/npm/http-errors-enhanced-cjs)
+[![Build](https://github.com/petermetz/http-errors-enhanced-cjs/workflows/CI/badge.svg)](https://github.com/petermetz/http-errors-enhanced-cjs/actions?query=workflow%3ACI)
+[![Coverage](https://img.shields.io/codecov/c/gh/petermetz/http-errors-enhanced-cjs?token=jxElZm8DEK)](https://codecov.io/gh/petermetz/http-errors-enhanced-cjs)
+
+## Wait, is this a fork!?
+
+**YES! All credit goes to https://github.com/ShogunPanda**
+
+TLDR: I needed a CJS build of the original library.
+
+1. This is a fork of the excellent https://github.com/ShogunPanda/http-errors-enhanced/ repository whose author deserves all the credit.
+2. The reason for the fork is explained here in the comments: https://github.com/ShogunPanda/http-errors-enhanced/pull/4
+3. The intention for the fork is to keep up with upstream changes as much as possible, so the changes here
+will be kept to a minimum to ensure that there we don't end up in a situation where certain changes
+can no longer be pulled from upstream.
+4. If you have a bug to report, please try to reproduce it with the upstream repo first. If it is also present there, then it should be reported there and we'll backport it here as the fixes come in.
+5. The only time you should report issues here if you can demonstrate that it is working fine in the upstream repo and it does not work here - most likely due to something with the CJS/EJS differences.
+
+### Couldn't you just use the ESM-only lib with dynamic imports?
+
+Nope. Jest crashes with segmentation faults (!!!) when we try to do that... ;-(
+
+## Summary
 
 Create HTTP errors with additional properties for any framework.
-
-http://sw.cowtech.it/http-errors-enhanced
 
 ## Installation
 
 Just run:
 
 ```bash
-npm install http-errors-enhanced --save
+npm install http-errors-enhanced-cjs --save
 ```
 
 ## Usage
@@ -213,24 +231,15 @@ console.log(JSON.stringify(notFoundErrorSchema))
 */
 ```
 
-## ESM Only
-
-This package only supports to be directly imported in a ESM context.
-
-For informations on how to use it in a CommonJS context, please check [this page](https://gist.github.com/ShogunPanda/fe98fd23d77cdfb918010dbc42f4504d).
-
 ## Credits
 
 This project has been heavily inspired by [http-errors](https://github.com/jshttp/http-errors), of which is a indipendent and unrelated project.
 
-## Contributing to http-errors-enhanced
+This is a fork of https://github.com/ShogunPanda/http-errors-enhanced/
 
-- Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-- Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-- Fork the project.
-- Start a feature/bugfix branch.
-- Commit and push until you are happy with your contribution.
-- Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+## Contributing to http-errors-enhanced-cjs
+
+- Report bugs on the upstream repository unless you can demonstrate with a reproduction code repository/gist that your bug is **only** present in this fork and not in the upstream repository.
 
 ## Copyright
 
